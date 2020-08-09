@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .centerCont{
+display: flex;
+justify-content: center;
+align-items: center;    
+width: 100vw;
+height: 100vh;
+}
+.Quiz {
+    display: grid;
+    width: 800px;
+    height: 600px;
+    grid-template-rows: 60px auto;
+}
+.heads{
+    background: burlywood;
+    display: flex;
+    justify-content: space-around;
+  
+}
+.quizBody{
+    background: cadetblue;
+    padding: 50px;
+}
+
+.options{
+    margin-bottom: 15px;
+    list-style-type: none;
+background-color: whitesmoke;
+width: 50%;
+padding: 10px;
+}
+.btn{
+background-color: whitesmoke;
+color: black;
+padding: 15px 20px;
+}
+.active
+{
+background: black;
+color: white;
+}
+</style>
+</head>
+<body onload="startQuiz()">
+    
+    <div class="centerCont">
+        <div class="Quiz">
+            <div class="heads">
+                <h2> QUIZ APP</h2>
+            </div>
+                <div class="quizBody">
+                    <div class="quest" id="question">
+                        <h1>What is your name</h1>
+                        <!-- <ul class="list">
+                            <li class="options">Muhammad saad</li>
+                            <li class="options">saad Khan</li>
+                            <li class="options">Saad Khan Rajeya</li>
+                            <li class="options"> M saad Khan</li>
+                        </ul> -->
+                        
+                    </div>
+                    <button class="btn" id="next" onclick="next()">Next Question</button> 
+                </div>
+            
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
